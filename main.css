@@ -134,6 +134,75 @@ nav ul li {
     max-width: 2500px;
 }
 
+/*формы*/
+.forms {
+    padding: 100px;
+    padding-left: 500px;
+    padding-right: 500px;
+    background-color: #282828;
+    color: white;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column-1 {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.column-2 {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.forms button {
+    font-size: 29px;
+    color: white;
+    padding: 25px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 50px;
+    border-color: white;
+    background-color: #282828;
+}
+
+.forms h1 {
+    padding-bottom: 70px;
+    color: #BFE142;
+}
+
+.forms p {
+    font-size: 23px;
+}
+
+label {
+    font-size: 23px;
+    padding: 10px;
+}
+
+.resized {
+    color: white;
+    width: 550px;
+    background-color : #282828;
+    border: none;
+    border-bottom: 2px solid white;
+    }    
+
+textarea {
+    resize: none;
+    width: 550px;
+    height: 190px;
+}
+
+input {
+    width: 28px; 
+    height: 28px;
+}
+
 /*подвал*/
 .footer {
     display: flex;
