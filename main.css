@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Segoe UI;
 }
 
 /*использование grid в секции инстаграм*/
@@ -37,7 +37,7 @@ hr {
 }
 
 .insta {
-    margin: 200px;
+    margin-bottom: 100px;
 }
 
 .text { 
@@ -47,10 +47,12 @@ hr {
 
 /*главная*/
 .main {
-    min-width: 2500px;
+    max-width: 2500px;
+    min-height: 1350px;
     margin: 0 auto;
     padding: 20px;
     font-family: Segoe UI;
+    background-image:url('главная.png');
 }
 
 .main header {
@@ -58,14 +60,6 @@ hr {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    background-color: #f2f2f2;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-left: 30px;
 }
 
 nav ul {
@@ -76,46 +70,25 @@ nav ul {
 
 nav ul li {
     margin: 0 10px;
+    margin-left: 30px;
+    font-size: 30px;
 }
 
 .hero {
     position: relative;
     height: 500px;
-    background-color: #f2f2f2;
     overflow: hidden;
-}
-
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #77c200;
-    z-index: -1;
 }
 
 .hero-text {
     position: absolute;
-    top: 50%;
     left: 15%;
     transform: translate(-50%, -50%);
 }
-
-.hero-text h1 {
-    text-align: left;
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 24px;
-    margin-bottom: 40px;
-}
-
 .hero-text button {
     font-size: 29px;
     color: white;
+    margin-top: 1300px;
     padding: 25px;
     padding-left: 55px;
     padding-right: 55px;
@@ -124,32 +97,22 @@ nav ul li {
     background-color: #282828;
 }
 
+header nav ul li:hover,
+header nav ul li:hover a,
+header nav ul li:hover br,
+header nav ul li:hover u {
+    color: #FF8C00;
+    transition: color 0.3s ease;
+    border-bottom: 3px solid #FF8C09;
+}
+
+
 /*блок с кругами*/
 .bz-content, .bz-border{
     justify-content: center;
     align-items: center; 
     padding: 50px;
     font-family: Segoe UI;
-}
-
-.bz-content {
-    box-sizing: content-box;
-}
-  
-.bz-content *,
-.bz-content *::before,
-.bz-content *::after {
-    box-sizing: inherit;
-}
-  
-.bz-border {
-    box-sizing: border-box;
-}
-
-.bz-border *,
-  .bz-border *::before,
-  .bz-border *::after {
-    box-sizing: inherit;
 }
 
 .photo {    
@@ -192,6 +155,12 @@ nav ul li {
     margin: 0 5px; 
     margin-left: 130px;
     margin-right: 130px;
+    -webkit-animation: FadeIn 4s linear; 
+    -webkit-animation-fill-mode:both;
+}
+
+.rotate {
+    animation: 7s linear rotate;
 }
 
 .circle image {
@@ -200,6 +169,41 @@ nav ul li {
     max-height: 100%; 
 }
 
+@keyframes rotate {
+    from {
+      transform: rotateX(0deg);
+    }
+  
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+@-webkit-keyframes FadeIn { 
+    0% { opacity:0; -webkit-transform:scale(.1);}
+    21.25% {opacity:1; -webkit-transform:scale(1.05);}
+    25% {-webkit-transform:scale(1); }
+}
+
+.circle.one {
+    animation-delay: 1.5s;
+}
+
+.circle.two {
+    animation-delay: 3s;
+}
+
+.circle.three {
+    animation-delay: 4.5s;
+}
+
+.circle.four {
+    animation-delay: 6s;
+}
+
+.circle.five {
+    animation-delay: 7.5s;
+}
 
 /*программы*/
 .product-grid {
@@ -215,6 +219,8 @@ nav ul li {
     margin: 0 auto;
     max-width: 2500px;
     font-family: Segoe UI;
+    justify-content: center;
+    padding-top: 100px;
 }
 
 .title {
@@ -239,12 +245,19 @@ nav ul li {
 
 /*формы*/
 .forms {
-    padding: 100px;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding: 20px;
+    max-width: 2500px;
+    background: url(грибы.png) no-repeat;
     background-color: #282828;
     color: white;
     font-family: Segoe UI;
+    margin: 0 auto;
+}
+
+.bird {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 .columns {
@@ -266,6 +279,7 @@ nav ul li {
 .forms button {
     font-size: 29px;
     color: white;
+    margin-bottom: 100px;
     padding: 25px;
     padding-left: 55px;
     padding-right: 55px;
@@ -312,7 +326,7 @@ input {
     display: flex;
     justify-content: center; 
     align-items: center;
-    min-width: 2500px;
+    max-width: 2500px;
     background-color: black;
     margin: 0 auto;
     padding: 20px;
