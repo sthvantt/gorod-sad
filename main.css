@@ -12,16 +12,17 @@ body {
     padding: 10px;
     max-width: 2500px;
     margin: 0 auto;
+    font-family: Segoe UI;
 }
 
 h1 {
     font-size: 70px;
-    font-family: Arial;
+    font-family: Segoe UI;
 }
 
 p{
     font-size: 28px;
-    font-family: Arial;
+    font-family: Segoe UI;
 }
 
 hr {
@@ -49,6 +50,7 @@ hr {
     min-width: 2500px;
     margin: 0 auto;
     padding: 20px;
+    font-family: Segoe UI;
 }
 
 .main header {
@@ -111,28 +113,129 @@ nav ul li {
     margin-bottom: 40px;
 }
 
-.cta {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
+.hero-text button {
+    font-size: 29px;
+    color: white;
+    padding: 25px;
+    padding-left: 55px;
+    padding-right: 55px;
     border-radius: 50px;
+    border-color: white;
+    background-color: #282828;
 }
 
-/*программы*/
+/*блок с кругами*/
+.bz-content, .bz-border{
+    justify-content: center;
+    align-items: center; 
+    padding: 50px;
+    font-family: Segoe UI;
+}
 
+.bz-content {
+    box-sizing: content-box;
+}
+  
+.bz-content *,
+.bz-content *::before,
+.bz-content *::after {
+    box-sizing: inherit;
+}
+  
+.bz-border {
+    box-sizing: border-box;
+}
+
+.bz-border *,
+  .bz-border *::before,
+  .bz-border *::after {
+    box-sizing: inherit;
+}
+
+.photo {    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+}
+
+.names nav ul {
+    list-style: none;
+}
+
+.names nav li {
+    font-size: 34px;
+    padding-left: 100px;
+    padding-right: 25px;
+    width: 350px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center; 
+    width: 250px;
+    height: 250px;
+    background: #BFE142;
+    -moz-border-radius: 125px;
+    -webkit-border-radius: 125px;
+    border-radius: 125px;
+    margin: 0 5px; 
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.circle image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+
+/*программы*/
 .product-grid {
     display: grid;
     grid-template-columns: 800px 800px 800px;
     grid-row-gap: 70px;
     margin: 0 auto;
     padding: 100px;
+    
 }
 
 .programs {
     margin: 0 auto;
     max-width: 2500px;
+    font-family: Segoe UI;
 }
+
+.title {
+    font-size: 50px;
+}
+
+.list {
+    font-size: 25px;
+}
+
+.product button {
+    font-size: 29px;
+    color: red;
+    padding: 25px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 50px;
+    border-color: red;
+    background-color: white;
+}
+
 
 /*формы*/
 .forms {
@@ -141,6 +244,7 @@ nav ul li {
     padding-right: 500px;
     background-color: #282828;
     color: white;
+    font-family: Segoe UI;
 }
 
 .columns {
@@ -213,6 +317,7 @@ input {
     margin: 0 auto;
     padding: 20px;
     color: #fff;
+    font-family: Segoe UI;
 }
 
 .footer table {
@@ -225,4 +330,4 @@ table tbody tr td {
     font-size: 24px;
     width: 200px;
     height: 200px;
-  }
+}
